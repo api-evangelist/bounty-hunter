@@ -1,7 +1,26 @@
 aid: bounty-hunter
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/bounty-hunter.png
 name: Bounty Hunter
-description: Bounty Hunter is a company surfaced as a portfolio company of 500-global and added to the
-  API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: 'Bounty Hunter (獎金獵人) is Taiwan''s largest creative-competition platform, founded
+  in 2011 to help young creators discover and enter contests. It aggregates and curates design,
+  illustration, photography, short-film, writing, music, business-planning, programming, and
+  academic competitions from Taiwan and around the world for its several-hundred-thousand registered
+  creator members. Through its Contest Builder (contest.bhuntr.com) and brand-services arm
+  (desk.bhuntr.com) it also runs sponsored competitions for clients including Google, Microsoft,
+  Lexus, McDonald''s, and E.SUN. The company established a U.S. headquarters in 2014 and is backed
+  by 500 Startups (500 Global) and Silicon Valley angel investors. It exposes no documented public
+  developer API; api.bhuntr.com is an undocumented first-party backend.'
 url: https://raw.githubusercontent.com/api-evangelist/bounty-hunter/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +30,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Competitions
+- Contests
+- Creative
+- Crowdsourcing
+- Design
+- Community
+- Taiwan
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +47,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/bounty-hunter-domain-security.yml
 - type: Website
   url: https://bhuntr.com
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
